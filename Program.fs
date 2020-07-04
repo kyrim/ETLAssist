@@ -26,7 +26,7 @@ let main argv =
       let connectionString = parsed.GetResult Conn
       let providerType = parsed.GetResult Type
 
-      let json = Definitions.DeserialiseJsonFromFile path;
+      let json = Definitions.DeserialiseJsonFromFile path
  
       0
     with
