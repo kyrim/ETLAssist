@@ -6,7 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="Extraction.fs" />
     <Compile Include="Definitions.fs" />
+    <Compile Include="Analysis.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 

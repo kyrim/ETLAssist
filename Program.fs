@@ -1,4 +1,5 @@
 ﻿open Argu
+open Definitions
 
 type CliArguments =
     | [<Mandatory>]Path of path:string
@@ -23,7 +24,7 @@ let main argv =
       let connectionString = parsed.GetResult Conn
       let providerType = parsed.GetResult Type
 
-      let json = Definitions.DeserialiseJsonFromFile path
+      let json = DeserialiseJsonFromFile path
  
       0
     with
