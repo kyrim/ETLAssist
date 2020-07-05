@@ -6,7 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Extraction.fs" />
+    <Compile Include="Extraction\Extraction.fs" />
+    <Compile Include="Extraction\Postgres.fs" />
+    <Compile Include="Extraction\Extractors.fs" />
     <Compile Include="Definitions.fs" />
     <Compile Include="Analysis.fs" />
     <Compile Include="Program.fs" />

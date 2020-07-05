@@ -1,11 +1,11 @@
-module Analysis
+module ETLAssist.Analysis
 
-open Definitions
-open Extraction
+open ETLAssist.Definitions
+open ETLAssist.Extraction
 
 type AnalysisResult =
     { TargetFieldName: string
-      PotentialSourceFields: SchemaColumn [] }
+      PotentialSourceFields: List<SchemaColumn> }
 
-let analyse (definitions: List<Definition>) (schema: List<SchemaColumn>): List<AnalysisResult> =
-    List.empty<AnalysisResult>
+let analyse (definitions: List<Definition>) (schema: List<SchemaColumn>) =
+    Ok List.empty<AnalysisResult>

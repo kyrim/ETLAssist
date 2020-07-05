@@ -1,13 +1,13 @@
-module Definitions
+module ETLAssist.Definitions
 
 open FSharp.Json
 
 type Definition =
     { TargetFieldName: string
-      PossibleColumnNames: string []
-      PossibleDataValues: string [] }
+      PossibleFieldNames: List<string>
+      PossibleDataValues: List<string> }
 
-type Definitions = { Definitions: Definition [] }
+type Definitions = { Definitions: List<Definition> }
 
 let config =
     JsonConfig.create (jsonFieldNaming = Json.snakeCase)
