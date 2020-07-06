@@ -1,3 +1,3 @@
 ﻿module ETLAssist.Extraction.Postgres
 
-let postgresExtractor (connectionString: ConnectionString): Result<List<SchemaColumn>, string> = Error ""
+let postgresExtractor (connectionString: ConnectionString) (sampleSize: int): Result<List<SchemaField>, string> = Error ""

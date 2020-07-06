@@ -1,9 +1,9 @@
 module ETLAssist.Extraction
 
-type SchemaColumn =
+type SchemaField =
     { FieldName: string
       TableName: string
-      SampleDataValues: string [] }
+      SampleDataValues: List<string> }
 
 type ConnectionString = string
 
